@@ -1,0 +1,633 @@
+{
+    "performance": {
+        "first-contentful-paint": {
+            "title": "First Contentful Paint",
+            "description": "First Contentful Paint marks the time at which the first text or image is painted. [Learn more about the First Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/first-contentful-paint/).",
+            "score": 0.97,
+            "displayValue": "1.4\u00a0s",
+            "details": []
+        },
+        "largest-contentful-paint": {
+            "title": "Largest Contentful Paint",
+            "description": "Largest Contentful Paint marks the time at which the largest text or image is painted. [Learn more about the Largest Contentful Paint metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-largest-contentful-paint/)",
+            "score": 0.88,
+            "displayValue": "2.6\u00a0s",
+            "details": []
+        },
+        "speed-index": {
+            "title": "Speed Index",
+            "description": "Speed Index shows how quickly the contents of a page are visibly populated. [Learn more about the Speed Index metric](https://developer.chrome.com/docs/lighthouse/performance/speed-index/).",
+            "score": 1,
+            "displayValue": "1.4\u00a0s",
+            "details": []
+        },
+        "total-blocking-time": {
+            "title": "Total Blocking Time",
+            "description": "Sum of all time periods between FCP and Time to Interactive, when task length exceeded 50ms, expressed in milliseconds. [Learn more about the Total Blocking Time metric](https://developer.chrome.com/docs/lighthouse/performance/lighthouse-total-blocking-time/).",
+            "score": 1,
+            "displayValue": "10\u00a0ms",
+            "details": []
+        },
+        "interactive": {
+            "title": "Time to Interactive",
+            "description": "Time to Interactive is the amount of time it takes for the page to become fully interactive. [Learn more about the Time to Interactive metric](https://developer.chrome.com/docs/lighthouse/performance/interactive/).",
+            "score": 0.98,
+            "displayValue": "2.6\u00a0s",
+            "details": []
+        },
+        "cumulative-layout-shift": {
+            "title": "Cumulative Layout Shift",
+            "description": "Cumulative Layout Shift measures the movement of visible elements within the viewport. [Learn more about the Cumulative Layout Shift metric](https://web.dev/articles/cls).",
+            "score": 1,
+            "displayValue": "0",
+            "details": [
+                {
+                    "cumulativeLayoutShiftMainFrame": 0,
+                    "newEngineResult": {
+                        "cumulativeLayoutShift": 0,
+                        "cumulativeLayoutShiftMainFrame": 0
+                    },
+                    "newEngineResultDiffered": false
+                }
+            ]
+        },
+        "server-response-time": {
+            "title": "Initial server response time was short",
+            "description": "Keep the server response time for the main document short because all other requests depend on it. [Learn more about the Time to First Byte metric](https://developer.chrome.com/docs/lighthouse/performance/time-to-first-byte/).",
+            "score": 1,
+            "displayValue": "Root document took 40\u00a0ms",
+            "details": [
+                {
+                    "url": "https://rabbitt.ai/",
+                    "responseTime": 39.23000000000002
+                }
+            ]
+        },
+        "bootup-time": {
+            "title": "JavaScript execution time",
+            "description": "Consider reducing the time spent parsing, compiling, and executing JS. You may find delivering smaller JS payloads helps with this. [Learn how to reduce Javascript execution time](https://developer.chrome.com/docs/lighthouse/performance/bootup-time/).",
+            "score": 1,
+            "displayValue": "0.5\u00a0s",
+            "details": [
+                {
+                    "url": "https://rabbitt.ai/",
+                    "total": 710.3040000000001,
+                    "scripting": 57.176,
+                    "scriptParseCompile": 4.3999999999999995
+                },
+                {
+                    "url": "Unattributable",
+                    "total": 545.4240000000025,
+                    "scripting": 39.492,
+                    "scriptParseCompile": 0
+                },
+                {
+                    "url": "https://rabbitt.ai/_astro/proxy.DXQhxnaE.js",
+                    "total": 531.368,
+                    "scripting": 168.2680000000003,
+                    "scriptParseCompile": 0.648
+                },
+                {
+                    "url": "https://rabbitt.ai/_astro/index.Bv4TwVfu.js",
+                    "total": 279.7240000000002,
+                    "scripting": 267.9120000000002,
+                    "scriptParseCompile": 0.768
+                }
+            ]
+        },
+        "mainthread-work-breakdown": {
+            "title": "Minimize main-thread work",
+            "description": "Consider reducing the time spent parsing, compiling and executing JS. You may find delivering smaller JS payloads helps with this. [Learn how to minimize main-thread work](https://developer.chrome.com/docs/lighthouse/performance/mainthread-work-breakdown/)",
+            "score": 0.5,
+            "displayValue": "2.1\u00a0s",
+            "details": [
+                {
+                    "group": "other",
+                    "groupLabel": "Other",
+                    "duration": 909.1479999999989
+                },
+                {
+                    "group": "scriptEvaluation",
+                    "groupLabel": "Script Evaluation",
+                    "duration": 539.0479999999997
+                },
+                {
+                    "group": "styleLayout",
+                    "groupLabel": "Style & Layout",
+                    "duration": 479.2360000000001
+                },
+                {
+                    "group": "paintCompositeRender",
+                    "groupLabel": "Rendering",
+                    "duration": 136.26000000000022
+                },
+                {
+                    "group": "parseHTML",
+                    "groupLabel": "Parse HTML & CSS",
+                    "duration": 45.13999999999999
+                },
+                {
+                    "group": "scriptParseCompile",
+                    "groupLabel": "Script Parsing & Compilation",
+                    "duration": 8.403999999999998
+                },
+                {
+                    "group": "garbageCollection",
+                    "groupLabel": "Garbage Collection",
+                    "duration": 4.715999999999998
+                }
+            ]
+        },
+        "diagnostics": {
+            "title": "Diagnostics",
+            "description": "Collection of useful page vitals.",
+            "score": 1,
+            "displayValue": null,
+            "details": [
+                {
+                    "numRequests": 35,
+                    "numScripts": 16,
+                    "numStylesheets": 1,
+                    "numFonts": 0,
+                    "numTasks": 1429,
+                    "numTasksOver10ms": 4,
+                    "numTasksOver25ms": 1,
+                    "numTasksOver50ms": 1,
+                    "numTasksOver100ms": 0,
+                    "numTasksOver500ms": 0,
+                    "rtt": 17.301000000000002,
+                    "throughput": 81088088.97215594,
+                    "maxRtt": 37.884,
+                    "maxServerLatency": 608.3629999999999,
+                    "totalByteWeight": 3641132,
+                    "totalTaskTime": 530.4879999999973,
+                    "mainDocumentTransferSize": 8757
+                }
+            ]
+        },
+        "resource-summary": {
+            "title": "Resources Summary",
+            "description": "Aggregates all network requests and groups them by type",
+            "score": 1,
+            "displayValue": null,
+            "details": [
+                {
+                    "resourceType": "total",
+                    "label": "Total",
+                    "requestCount": 34,
+                    "transferSize": 3613512
+                },
+                {
+                    "resourceType": "media",
+                    "label": "Media",
+                    "requestCount": 3,
+                    "transferSize": 3158728
+                },
+                {
+                    "resourceType": "image",
+                    "label": "Image",
+                    "requestCount": 12,
+                    "transferSize": 280785
+                },
+                {
+                    "resourceType": "script",
+                    "label": "Script",
+                    "requestCount": 16,
+                    "transferSize": 144412
+                },
+                {
+                    "resourceType": "stylesheet",
+                    "label": "Stylesheet",
+                    "requestCount": 1,
+                    "transferSize": 13071
+                },
+                {
+                    "resourceType": "document",
+                    "label": "Document",
+                    "requestCount": 1,
+                    "transferSize": 8757
+                },
+                {
+                    "resourceType": "other",
+                    "label": "Other",
+                    "requestCount": 1,
+                    "transferSize": 7759
+                },
+                {
+                    "resourceType": "font",
+                    "label": "Font",
+                    "requestCount": 0,
+                    "transferSize": 0
+                },
+                {
+                    "resourceType": "third-party",
+                    "label": "Third-party",
+                    "requestCount": 2,
+                    "transferSize": 9161
+                }
+            ]
+        },
+        "long-tasks": {
+            "title": "Avoid long main-thread tasks",
+            "description": "Lists the longest tasks on the main thread, useful for identifying worst contributors to input delay. [Learn how to avoid long main-thread tasks](https://web.dev/articles/optimize-long-tasks)",
+            "score": 1,
+            "displayValue": "2 long tasks found",
+            "details": [
+                {
+                    "url": "https://rabbitt.ai/",
+                    "duration": 146.9999999999999,
+                    "startTime": 967.149
+                },
+                {
+                    "url": "Unattributable",
+                    "duration": 71,
+                    "startTime": 866.149
+                }
+            ]
+        }
+    },
+    "accessibility": {
+        "color-contrast": {
+            "title": "Background and foreground colors have a sufficient contrast ratio",
+            "description": "Low-contrast text is difficult or impossible for many users to read. [Learn how to provide sufficient color contrast](https://dequeuniversity.com/rules/axe/4.10/color-contrast).",
+            "score": 1,
+            "displayValue": null,
+            "details": []
+        },
+        "aria-allowed-attr": {
+            "title": "`[aria-*]` attributes match their roles",
+            "description": "Each ARIA `role` supports a specific subset of `aria-*` attributes. Mismatching these invalidates the `aria-*` attributes. [Learn how to match ARIA attributes to their roles](https://dequeuniversity.com/rules/axe/4.10/aria-allowed-attr).",
+            "score": null,
+            "displayValue": null,
+            "details": []
+        },
+        "aria-valid-attr": {
+            "title": "`[aria-*]` attributes are valid and not misspelled",
+            "description": "Assistive technologies, like screen readers, can't interpret ARIA attributes with invalid names. [Learn more about valid ARIA attributes](https://dequeuniversity.com/rules/axe/4.10/aria-valid-attr).",
+            "score": null,
+            "displayValue": null,
+            "details": []
+        },
+        "button-name": {
+            "title": "Buttons have an accessible name",
+            "description": "When a button doesn't have an accessible name, screen readers announce it as \"button\", making it unusable for users who rely on screen readers. [Learn how to make buttons more accessible](https://dequeuniversity.com/rules/axe/4.10/button-name).",
+            "score": 1,
+            "displayValue": null,
+            "details": []
+        },
+        "document-title": {
+            "title": "Document has a `<title>` element",
+            "description": "The title gives screen reader users an overview of the page, and search engine users rely on it heavily to determine if a page is relevant to their search. [Learn more about document titles](https://dequeuniversity.com/rules/axe/4.10/document-title).",
+            "score": 1,
+            "displayValue": null,
+            "details": []
+        },
+        "html-has-lang": {
+            "title": "`<html>` element has a `[lang]` attribute",
+            "description": "If a page doesn't specify a `lang` attribute, a screen reader assumes that the page is in the default language that the user chose when setting up the screen reader. If the page isn't actually in the default language, then the screen reader might not announce the page's text correctly. [Learn more about the `lang` attribute](https://dequeuniversity.com/rules/axe/4.10/html-has-lang).",
+            "score": 1,
+            "displayValue": null,
+            "details": []
+        },
+        "html-lang-valid": {
+            "title": "`<html>` element has a valid value for its `[lang]` attribute",
+            "description": "Specifying a valid [BCP 47 language](https://www.w3.org/International/questions/qa-choosing-language-tags#question) helps screen readers announce text properly. [Learn how to use the `lang` attribute](https://dequeuniversity.com/rules/axe/4.10/html-lang-valid).",
+            "score": 1,
+            "displayValue": null,
+            "details": []
+        },
+        "image-alt": {
+            "title": "Image elements have `[alt]` attributes",
+            "description": "Informative elements should aim for short, descriptive alternate text. Decorative elements can be ignored with an empty alt attribute. [Learn more about the `alt` attribute](https://dequeuniversity.com/rules/axe/4.10/image-alt).",
+            "score": 1,
+            "displayValue": null,
+            "details": []
+        },
+        "label": {
+            "title": "Form elements have associated labels",
+            "description": "Labels ensure that form controls are announced properly by assistive technologies, like screen readers. [Learn more about form element labels](https://dequeuniversity.com/rules/axe/4.10/label).",
+            "score": 1,
+            "displayValue": null,
+            "details": []
+        },
+        "link-name": {
+            "title": "Links have a discernible name",
+            "description": "Link text (and alternate text for images, when used as links) that is discernible, unique, and focusable improves the navigation experience for screen reader users. [Learn how to make links accessible](https://dequeuniversity.com/rules/axe/4.10/link-name).",
+            "score": 1,
+            "displayValue": null,
+            "details": []
+        },
+        "meta-viewport": {
+            "title": "`[user-scalable=\"no\"]` is not used in the `<meta name=\"viewport\">` element and the `[maximum-scale]` attribute is not less than 5.",
+            "description": "Disabling zooming is problematic for users with low vision who rely on screen magnification to properly see the contents of a web page. [Learn more about the viewport meta tag](https://dequeuniversity.com/rules/axe/4.10/meta-viewport).",
+            "score": 1,
+            "displayValue": null,
+            "details": []
+        },
+        "valid-lang": {
+            "title": "`[lang]` attributes have a valid value",
+            "description": "Specifying a valid [BCP 47 language](https://www.w3.org/International/questions/qa-choosing-language-tags#question) on elements helps ensure that text is pronounced correctly by a screen reader. [Learn how to use the `lang` attribute](https://dequeuniversity.com/rules/axe/4.10/valid-lang).",
+            "score": null,
+            "displayValue": null,
+            "details": []
+        },
+        "video-caption": {
+            "title": "`<video>` elements contain a `<track>` element with `[kind=\"captions\"]`",
+            "description": "When a video provides a caption it is easier for deaf and hearing impaired users to access its information. [Learn more about video captions](https://dequeuniversity.com/rules/axe/4.10/video-caption).",
+            "score": 1,
+            "displayValue": null,
+            "details": [
+                {
+                    "node": {
+                        "type": "node",
+                        "lhId": "1-4-VIDEO",
+                        "path": "1,HTML,1,BODY,8,ASTRO-ISLAND,0,DIV,0,SECTION,1,DIV,1,VIDEO",
+                        "selector": "div > section.overflow-hidden > div.lg:my-0 > video.h-56",
+                        "boundingRect": {
+                            "top": 624,
+                            "bottom": 904,
+                            "left": -51,
+                            "right": 464,
+                            "width": 515,
+                            "height": 280
+                        },
+                        "snippet": "<video src=\"/videos/diamond.mp4\" autoplay=\"\" loop=\"\" muted=\"\" loading=\"lazy\" class=\"h-56 w-full object-contain lg:h-full z-0 scale-125\">",
+                        "nodeLabel": "div > section.overflow-hidden > div.lg:my-0 > video.h-56",
+                        "explanation": "Fix all of the following:\n  Check that captions is available for the element"
+                    }
+                }
+            ]
+        }
+    },
+    "best_practices": {
+        "is-on-https": {
+            "title": "Uses HTTPS",
+            "description": "All sites should be protected with HTTPS, even ones that don't handle sensitive data. This includes avoiding [mixed content](https://developers.google.com/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content), where some resources are loaded over HTTP despite the initial request being served over HTTPS. HTTPS prevents intruders from tampering with or passively listening in on the communications between your app and your users, and is a prerequisite for HTTP/2 and many new web platform APIs. [Learn more about HTTPS](https://developer.chrome.com/docs/lighthouse/pwa/is-on-https/).",
+            "score": 1,
+            "displayValue": null,
+            "details": []
+        },
+        "redirects-http": {
+            "title": "Redirects HTTP traffic to HTTPS",
+            "description": "Make sure that you redirect all HTTP traffic to HTTPS in order to enable secure web features for all your users. [Learn more](https://developer.chrome.com/docs/lighthouse/pwa/redirects-http/).",
+            "score": null,
+            "displayValue": null,
+            "details": []
+        },
+        "errors-in-console": {
+            "title": "No browser errors logged to the console",
+            "description": "Errors logged to the console indicate unresolved problems. They can come from network request failures and other browser concerns. [Learn more about this errors in console diagnostic audit](https://developer.chrome.com/docs/lighthouse/best-practices/errors-in-console/)",
+            "score": 1,
+            "displayValue": null,
+            "details": []
+        },
+        "valid-source-maps": {
+            "title": "Page has valid source maps",
+            "description": "Source maps translate minified code to the original source code. This helps developers debug in production. In addition, Lighthouse is able to provide further insights. Consider deploying source maps to take advantage of these benefits. [Learn more about source maps](https://developer.chrome.com/docs/devtools/javascript/source-maps/).",
+            "score": 1,
+            "displayValue": null,
+            "details": []
+        },
+        "modern-image-formats": {
+            "title": "Serve images in next-gen formats",
+            "description": "Image formats like WebP and AVIF often provide better compression than PNG or JPEG, which means faster downloads and less data consumption. [Learn more about modern image formats](https://developer.chrome.com/docs/lighthouse/performance/uses-webp-images/).",
+            "score": 1,
+            "displayValue": "",
+            "details": []
+        },
+        "uses-http2": {
+            "title": "Use HTTP/2",
+            "description": "HTTP/2 offers many benefits over HTTP/1.1, including binary headers and multiplexing. [Learn more about HTTP/2](https://developer.chrome.com/docs/lighthouse/best-practices/uses-http2/).",
+            "score": 1,
+            "displayValue": null,
+            "details": []
+        },
+        "uses-passive-event-listeners": {
+            "title": "Uses passive listeners to improve scrolling performance",
+            "description": "Consider marking your touch and wheel event listeners as `passive` to improve your page's scroll performance. [Learn more about adopting passive event listeners](https://developer.chrome.com/docs/lighthouse/best-practices/uses-passive-event-listeners/).",
+            "score": 1,
+            "displayValue": null,
+            "details": []
+        },
+        "no-document-write": {
+            "title": "Avoids `document.write()`",
+            "description": "For users on slow connections, external scripts dynamically injected via `document.write()` can delay page load by tens of seconds. [Learn how to avoid document.write()](https://developer.chrome.com/docs/lighthouse/best-practices/no-document-write/).",
+            "score": 1,
+            "displayValue": null,
+            "details": []
+        }
+    },
+    "seo": {
+        "meta-description": {
+            "title": "Document has a meta description",
+            "description": "Meta descriptions may be included in search results to concisely summarize page content. [Learn more about the meta description](https://developer.chrome.com/docs/lighthouse/seo/meta-description/).",
+            "score": 1,
+            "displayValue": null,
+            "details": []
+        },
+        "http-status-code": {
+            "title": "Page has successful HTTP status code",
+            "description": "Pages with unsuccessful HTTP status codes may not be indexed properly. [Learn more about HTTP status codes](https://developer.chrome.com/docs/lighthouse/seo/http-status-code/).",
+            "score": 1,
+            "displayValue": null,
+            "details": []
+        },
+        "font-size": {
+            "title": "Document uses legible font sizes",
+            "description": "Font sizes less than 12px are too small to be legible and require mobile visitors to \u201cpinch to zoom\u201d in order to read. Strive to have >60% of page text \u226512px. [Learn more about legible font sizes](https://developer.chrome.com/docs/lighthouse/seo/font-size/).",
+            "score": 1,
+            "displayValue": "100% legible text",
+            "details": [
+                {
+                    "source": {
+                        "type": "code",
+                        "value": "Legible text"
+                    },
+                    "selector": "",
+                    "coverage": "100.00%",
+                    "fontSize": "\u2265 12px"
+                }
+            ]
+        },
+        "link-text": {
+            "title": "Links have descriptive text",
+            "description": "Descriptive link text helps search engines understand your content. [Learn how to make links more accessible](https://developer.chrome.com/docs/lighthouse/seo/link-text/).",
+            "score": 1,
+            "displayValue": null,
+            "details": []
+        },
+        "crawlable-anchors": {
+            "title": "Links are crawlable",
+            "description": "Search engines may use `href` attributes on links to crawl websites. Ensure that the `href` attribute of anchor elements links to an appropriate destination, so more pages of the site can be discovered. [Learn how to make links crawlable](https://support.google.com/webmasters/answer/9112205)",
+            "score": 1,
+            "displayValue": null,
+            "details": []
+        },
+        "is-crawlable": {
+            "title": "Page isn\u2019t blocked from indexing",
+            "description": "Search engines are unable to include your pages in search results if they don't have permission to crawl them. [Learn more about crawler directives](https://developer.chrome.com/docs/lighthouse/seo/is-crawlable/).",
+            "score": 1,
+            "displayValue": null,
+            "details": []
+        },
+        "robots-txt": {
+            "title": "robots.txt is valid",
+            "description": "If your robots.txt file is malformed, crawlers may not be able to understand how you want your website to be crawled or indexed. [Learn more about robots.txt](https://developer.chrome.com/docs/lighthouse/seo/invalid-robots-txt/).",
+            "score": 1,
+            "displayValue": null,
+            "details": []
+        },
+        "hreflang": {
+            "title": "Document has a valid `hreflang`",
+            "description": "hreflang links tell search engines what version of a page they should list in search results for a given language or region. [Learn more about `hreflang`](https://developer.chrome.com/docs/lighthouse/seo/hreflang/).",
+            "score": 1,
+            "displayValue": null,
+            "details": []
+        },
+        "canonical": {
+            "title": "Document has a valid `rel=canonical`",
+            "description": "Canonical links suggest which URL to show in search results. [Learn more about canonical links](https://developer.chrome.com/docs/lighthouse/seo/canonical/).",
+            "score": 1,
+            "displayValue": null,
+            "details": []
+        },
+        "structured-data": {
+            "title": "Structured data is valid",
+            "description": "Run the [Structured Data Testing Tool](https://search.google.com/structured-data/testing-tool/) and the [Structured Data Linter](http://linter.structured-data.org/) to validate structured data. [Learn more about Structured Data](https://developer.chrome.com/docs/lighthouse/seo/structured-data/).",
+            "score": null,
+            "displayValue": null,
+            "details": []
+        }
+    },
+    "suggestions": {
+        "uses-optimized-images": {
+            "title": "Efficiently encode images",
+            "description": "Optimized images load faster and consume less cellular data. [Learn how to efficiently encode images](https://developer.chrome.com/docs/lighthouse/performance/uses-optimized-images/).",
+            "score": 1,
+            "displayValue": "",
+            "details": []
+        },
+        "uses-responsive-images": {
+            "title": "Properly size images",
+            "description": "Serve images that are appropriately-sized to save cellular data and improve load time. [Learn how to size images](https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/).",
+            "score": 0,
+            "displayValue": "Potential savings of 188\u00a0KiB",
+            "details": [
+                {
+                    "node": {
+                        "type": "node",
+                        "lhId": "1-61-IMG",
+                        "path": "1,HTML,1,BODY,8,ASTRO-ISLAND,0,DIV,2,SECTION,0,DIV,1,DIV,0,DIV,0,IMG",
+                        "selector": "div.lg:mt-24 > div.grid > div.h-64 > img.h-full",
+                        "boundingRect": {
+                            "top": 2570,
+                            "bottom": 2826,
+                            "left": 32,
+                            "right": 380,
+                            "width": 348,
+                            "height": 256
+                        },
+                        "snippet": "<img alt=\"image\" src=\"/assets/p1i2.webp\" class=\"h-full w-full lg:border-2 lg:border-gray-800 lg:bg-gray-100 object-contain\u2026\">",
+                        "nodeLabel": "image"
+                    },
+                    "url": "https://rabbitt.ai/assets/p1i2.webp",
+                    "totalBytes": 100942,
+                    "wastedBytes": 87661,
+                    "wastedPercent": 86.8425930407312
+                },
+                {
+                    "node": {
+                        "type": "node",
+                        "lhId": "1-63-IMG",
+                        "path": "1,HTML,1,BODY,8,ASTRO-ISLAND,0,DIV,2,SECTION,0,DIV,2,DIV,0,DIV,0,IMG",
+                        "selector": "div.lg:mt-24 > div.grid > div.h-64 > img.h-full",
+                        "boundingRect": {
+                            "top": 3222,
+                            "bottom": 3478,
+                            "left": 32,
+                            "right": 380,
+                            "width": 348,
+                            "height": 256
+                        },
+                        "snippet": "<img alt=\"image\" src=\"/assets/p1i3.webp\" class=\"h-full w-full undefined object-contain lg:object-fit object-center rounded\u2026\">",
+                        "nodeLabel": "image"
+                    },
+                    "url": "https://rabbitt.ai/assets/p1i3.webp",
+                    "totalBytes": 78620,
+                    "wastedBytes": 55064,
+                    "wastedPercent": 70.03788854397726
+                },
+                {
+                    "node": {
+                        "type": "node",
+                        "lhId": "1-59-IMG",
+                        "path": "1,HTML,1,BODY,8,ASTRO-ISLAND,0,DIV,2,SECTION,0,DIV,0,DIV,0,DIV,0,IMG",
+                        "selector": "div.lg:mt-24 > div.grid > div.h-64 > img.h-full",
+                        "boundingRect": {
+                            "top": 1906,
+                            "bottom": 2162,
+                            "left": 32,
+                            "right": 380,
+                            "width": 348,
+                            "height": 256
+                        },
+                        "snippet": "<img alt=\"image\" src=\"/assets/p1i1.webp\" class=\"h-full w-full undefined object-contain lg:object-fit object-center rounded\u2026\">",
+                        "nodeLabel": "image"
+                    },
+                    "url": "https://rabbitt.ai/assets/p1i1.webp",
+                    "totalBytes": 68452,
+                    "wastedBytes": 49992,
+                    "wastedPercent": 73.0326426189076
+                }
+            ]
+        },
+        "uses-text-compression": {
+            "title": "Enable text compression",
+            "description": "Text-based resources should be served with compression (gzip, deflate or brotli) to minimize total network bytes. [Learn more about text compression](https://developer.chrome.com/docs/lighthouse/performance/uses-text-compression/).",
+            "score": 1,
+            "displayValue": "",
+            "details": []
+        },
+        "render-blocking-resources": {
+            "title": "Eliminate render-blocking resources",
+            "description": "Resources are blocking the first paint of your page. Consider delivering critical JS/CSS inline and deferring all non-critical JS/styles. [Learn how to eliminate render-blocking resources](https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/).",
+            "score": 0,
+            "displayValue": "Potential savings of 140\u00a0ms",
+            "details": [
+                {
+                    "url": "https://rabbitt.ai/_astro/19minutestosuccess.GVvl5NTP.css",
+                    "totalBytes": 13071,
+                    "wastedMs": 171
+                }
+            ]
+        },
+        "unused-css-rules": {
+            "title": "Reduce unused CSS",
+            "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
+            "score": 0,
+            "displayValue": "Potential savings of 10\u00a0KiB",
+            "details": [
+                {
+                    "url": "https://rabbitt.ai/_astro/19minutestosuccess.GVvl5NTP.css",
+                    "wastedBytes": 10526,
+                    "wastedPercent": 81.73303405658547,
+                    "totalBytes": 12878
+                }
+            ]
+        },
+        "unused-javascript": {
+            "title": "Reduce unused JavaScript",
+            "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+            "score": 1,
+            "displayValue": "",
+            "details": [] 
+        },
+        "efficient-animated-content": {
+            "title": "Use video formats for animated content",
+            "description": "Large GIFs are inefficient for delivering animated content. Consider using MPEG4/WebM videos for animations and PNG/WebP for static images instead of GIF to save network bytes. [Learn more about efficient video formats](https://developer.chrome.com/docs/lighthouse/performance/efficient-animated-content/)",
+            "score": 1,
+            "displayValue": "",
+            "details": []
+        }
+    }
+}
